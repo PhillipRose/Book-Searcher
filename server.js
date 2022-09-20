@@ -5,6 +5,10 @@ const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 const sequelize = require('./config/connection');
 
+// TODO: need to use cookies and session
+// TODO: need to have auth for login
+
+
 const app = express();
 const PORT = process.env.PORT || 3001;
 
