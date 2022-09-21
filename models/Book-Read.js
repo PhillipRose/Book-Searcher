@@ -1,0 +1,2 @@
+// Will need to reference the User id to keep track of what books that user has read.
+// Will need to be able to tell if the user has already made a review about that book and not allow them to make more than 1 review per book.
