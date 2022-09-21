@@ -20,7 +20,8 @@ Books_Read.init({
     review: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
-    }
+    },    
 
 })
 module.exports = Books_Read;
+
