@@ -23,4 +23,4 @@ Books_Read.init({
     }
 
 })
-Model.exports = Books_Read
+module.exports = Books_Read;
