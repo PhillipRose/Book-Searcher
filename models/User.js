@@ -4,8 +4,6 @@
 //  TODO: set up the references to the completed books list
 //  TODO: set up the references to the want to read books list
 //  TODO: set up the references to the reviews list
-
-
 const { UUIDV4, Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');

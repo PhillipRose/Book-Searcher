@@ -20,7 +20,14 @@ Books_Read.init({
     review: {
         type: DataTypes.BOOLEAN,
         allowNull: false,
-    }
+    },    
 
-})
+},
+    {
+    sequelize,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'Books_Read',
+    }
+);
 Model.exports = Books_Read
