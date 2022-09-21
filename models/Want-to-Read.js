@@ -21,3 +21,4 @@ Read.init({
         allowNull: false,
     },
 })
+module.exports = Read;
