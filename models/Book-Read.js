@@ -22,12 +22,6 @@ Books_Read.init({
         allowNull: false,
     },    
 
-},
-    {
-    sequelize,
-    freezeTableName: true,
-    underscored: true,
-    modelName: 'Books_Read',
-    }
-);
-Model.exports = Books_Read
+})
+module.exports = Books_Read;
+

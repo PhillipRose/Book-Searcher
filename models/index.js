@@ -1,6 +1,6 @@
 // require all models
-const books = require('./Book-Read')
-const read = require('./Want-to-Read')
+const Books_Read = require('./Book-Read')
+const Read = require('./Want-to-Read')
 const User = require('./User');
 
-module.exports = { User };
+module.exports = { User, Read, Books_Read };
