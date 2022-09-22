@@ -4,7 +4,7 @@
 //  TODO: set up the references to the completed books list
 //  TODO: set up the references to the want to read books list
 //  TODO: set up the references to the reviews list
-const { UUIDV4, Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
@@ -30,23 +30,17 @@ User.init(
     },
     // This is the user reading list, and will join with the want-to-read table.
     books_to_read: {
-      type: Datatypes.STRING,
+      type: DataTypes.STRING,
       allowNull: true,
-    },
-    // this is a number to prevent multiple reviews from the same user
-    review_id: {
-      type: DataTypes.UUID,
-      defaultValue: UUIDV4,
-      allowNull: false,
     },
     // This is the displayed name for the User.
     nickname: {
-      type: DataTypes.VARCHAR(40),
-      allowNull: false,
+      type: DataTypes.STRING(40),
+      allowNull: true,
     },
     password: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
   },
   {

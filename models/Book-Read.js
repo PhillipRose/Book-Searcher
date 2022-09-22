@@ -12,16 +12,17 @@ Books_Read.init({
         primaryKey: true,
         autoIncrement: true,
     },
-    review_id: {
-        type: DataTypes.UUID,
-        defaultValue: UUIDV4,
-        allowNull: false,
-    },
-    review: {
+    reviews: {
         type: DataTypes.BOOLEAN,
-        allowNull: false,
-    },    
-
-})
+        allowNull: true,
+    },
+    },
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'Books_Read',
+});
 module.exports = Books_Read;
 

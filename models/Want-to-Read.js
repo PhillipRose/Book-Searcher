@@ -14,11 +14,18 @@ Read.init({
     },
     title: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
     },
     author: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
     },
-})
+    },
+    {
+    sequelize,
+    freezeTableName: true,
+    underscored: true,
+    modelName: 'Want-to-Read',
+    }
+)
 module.exports = Read;
