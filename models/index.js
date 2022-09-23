@@ -1,22 +1,13 @@
 // require all models
-const Books_Read = require('./Book-Read')
-const Read = require('./Want-to-Read')
 const User = require('./User');
-
 const Review = require('./Reviews');
 
-module.exports = { User, Read, Books_Read, Review };
-
-const Reviews = require('./Reviews')
-
-Reviews.belongsTo(User, {
+Review.belongsTo(User, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE',
   });
 
-User.hasMany(Reviews, {
-    foreignKey: 'user_id',
-})
 
-module.exports = { User, Read, Books_Read, Reviews };
+
+module.exports = { User, Review };
 
