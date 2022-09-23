@@ -4,9 +4,13 @@ const Read = require('./Want-to-Read')
 const User = require('./User');
 const Reviews = require('./Reviews')
 
-Driver.hasOne(License, {
-    foreignKey: 'driver_id',
+Reviews.belongsTo(User, {
+    foreignKey: 'user_id',
     onDelete: 'CASCADE',
   });
+
+User.hasMany(Reviews, {
+    foreignKey: 'user_id',
+})
 
 module.exports = { User, Read, Books_Read, Reviews };
