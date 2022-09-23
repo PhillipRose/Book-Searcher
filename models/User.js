@@ -17,7 +17,7 @@ class User extends Model {
 User.init(
   {
     // used by other tables to reference the user.
-    user_id: {
+    id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
