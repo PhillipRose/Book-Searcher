@@ -1,22 +1,17 @@
 [
   {
-    "books_completed": "Book Title 1 - Complete",
-    "books_to_read": "Book Title 1 - Want to Read",
-    "nickname": "The First Test User"
+   "user_name": "User1",
+   "email": "email@1.com",
+   "password": "pass1"
   },
   {
-    "books_completed": "Book Title 2 - Complete",
-    "books_to_read": "Book Title 2 - Want to Read",
-    "nickname": "The Second Test User"
+   "user_name": "User2",
+   "email": "email@2.com",
+   "password": "pass2"
   },
   {
-    "books_completed": "Book Title 3 - Complete",
-    "books_to_read": "Book Title 3 - Want to Read",
-    "nickname": "The Third Test User"
-  },
-  {
-    "books_completed": "Book Title 4 - Complete",
-    "books_to_read": "Book Title 4 - Want to Read",
-    "nickname": "The Fourth Test User"
+   "user_name": "User1",
+   "email": "email@3.com",
+   "password": "pass3"
   }
 ]
