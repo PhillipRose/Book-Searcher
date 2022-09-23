@@ -2,6 +2,11 @@
 const Books_Read = require('./Book-Read')
 const Read = require('./Want-to-Read')
 const User = require('./User');
+
+const Review = require('./Reviews');
+
+module.exports = { User, Read, Books_Read, Review };
+
 const Reviews = require('./Reviews')
 
 Reviews.belongsTo(User, {
@@ -14,3 +19,4 @@ User.hasMany(Reviews, {
 })
 
 module.exports = { User, Read, Books_Read, Reviews };
+
