@@ -23,16 +23,7 @@ User.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    // this will act as the list of books the user has read and will link with the reviews table.
-    books_completed: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
-    // This is the user reading list, and will join with the want-to-read table.
-    books_to_read: {
-      type: DataTypes.STRING,
-      allowNull: true,
-    },
+
     // This is the displayed name for the User.
     user_name: {
       type: DataTypes.STRING(40),

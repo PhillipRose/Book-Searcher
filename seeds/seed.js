@@ -8,9 +8,8 @@ const seedDatabase = async () => {
   await sequelize.sync({ force: true });
   console.log('seed function is hitting');
 
-  await User.bulkCreate(userData, reviewData
-  );
-  // await Reviews.bulkCreate(reviewData)
+  await User.bulkCreate(userData);
+  await Reviews.bulkCreate(reviewData);
 
   process.exit(0);
 };
