@@ -1,3 +1,17 @@
-{{!-- This will show a login box the user by default but can change into a register box when a "register" button/link is clicked. There should also be a "login" button/link on the register box to change it back to the login box --}}
-{{!-- The login box will have email and password fields and a login button. --}}
-{{!-- The register box will have a username, email and password field along with a register button. --}}
+<h2>Login</h2>
+
+<form class="form login-form">
+  <div class="form-group">
+    <label for="email-login">email:</label>
+    <input class="form-input" type="text" id="email-login" />
+  </div>
+  <div class="form-group">
+    <label for="password-login">password:</label>
+    <input class="form-input" type="password" id="password-login" />
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary" type="submit">login</button>
+  </div>
+</form>
+
+<script src="/js/login.js"></script>
