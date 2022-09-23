@@ -1,7 +1,7 @@
 {
   "name": "user-list",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. [Description](#description)\r 2. [Technologies](#technologies)\r 3. [Visuals](#visuals)\r 4. [Resources](#resources)\r 5. [Installation](#installation)\r 6. [Usage](#usage)\r 7. [Authors and Acknowledgements](#authors-and-acknowledgements)",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,10 +14,20 @@
   "dependencies": {
     "axios": "^0.27.2",
     "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.1.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.3",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhillipRose/Book-Searcher.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PhillipRose/Book-Searcher/issues"
+  },
+  "homepage": "https://github.com/PhillipRose/Book-Searcher#readme"
 }
