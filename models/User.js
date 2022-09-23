@@ -17,7 +17,7 @@ class User extends Model {
 User.init(
   {
     // used by other tables to reference the user.
-    id: {
+    user_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
@@ -34,9 +34,17 @@ User.init(
       allowNull: true,
     },
     // This is the displayed name for the User.
-    nickname: {
+    user_name: {
       type: DataTypes.STRING(40),
       allowNull: true,
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      validate: {
+        isEmail: true,
+      },
     },
     password: {
       type: DataTypes.STRING,
