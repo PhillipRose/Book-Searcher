@@ -1,44 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- <meta> tags> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <title>Book Searcher</title>
-    <div id="active-promopop" style="height: 2655px; display: none;"></div>
-
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<body style="zoom: 1;">
-	<!-- Facebook Pixel Code -->
-	<script>
-	  !function(f,b,e,v,n,t,s){
-      if(f.fbq)return;n=f.fbq=function(){
-        n.callMethod?
-	      n.callMethod.apply(n,arguments):n.queue.push(arguments)
-      };
-	    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-	      n.queue=[];t=b.createElement(e);t.async=!0;
-	      t.src=v;s=b.getElementsByTagName(e)[0];
-	      s.parentNode.insertBefore(t,s)
-    }
-        (window,document,'script',
-	      'https://connect.facebook.net/en_US/fbevents.js');
-	      fbq('init', '218929028581814'); 
-	    fbq('track', 'PageView');
-	</script>
-	
-  <noscript>
-	<img height="1" width="1" src="https://www.facebook.com/tr?id=218929028581814&ev=PageView&noscript=1">
-	</noscript>
-	<!-- End Facebook Pixel Code -->
-<!-- header -->
+<body>
+    <header>  
+        <nav>  
+        <ul>  
+        <li><a href="#"> Search </a></li>  
+        <li><a href="#"> Random </a></li>  
+        <li><a href="#"> My Reviews</a></li> 
+        <li><a href="#login">Login</a></li> 
+    </header>  
+        
+    <div class="rightNav">
+      <!-- the value that search bar will take is text -->
+            <input type="text" name="search" id="search" />
+            <button class="btn btn-sm">Search</button>
+        </div>
+    </nav>
+</body>
+
+
 <header class="header">
 	<div class="wrapper">
-	  <a href="https://www.bookbrowse.com" class="logo"><img src="/site/images/bblogo.gif" alt="BookBrowse Logo"></a>
-			<ul>
-				<li><a href="https://www.bookbrowse.com/login/" title="Member Login">Member Login</a></li>
-        <li><a href="https://www.bookbrowse.com/library" title="Library Member Login">Library Patron  Login</a></li>
-		  </ul>
+	  <a href="" class="logo"><img src="/" alt="Book Searcher logo"></a>
+			
 	</div>
 </header>
 
@@ -48,86 +38,18 @@
 	<div class="wrapper">
 		<div class="menu_trigger"></div>
 		  <ul>
-        <li class="submenu">
+                <li class="submenu">
 					<a href="/members/">Members</a>
 					<ul>
-	          <li><a href="/mag/"><i>The Review</i></a></li>
-						<li><a href="/readinglists/">My Reading List</a></li>
+	                    <li><a href=""><i>My Reviews</i></a></li>
+						<li><a href="">My Reading List</a></li>
 					</ul>
 				</li>
 			
 			<li class="submenu">
-				<a href="/current_books/">New</a>
-				<ul>
-					<li><a href="/arc/arc_reviews/">First Impressions</a></li>
-          <li><a href="/browse/ptw">New This Week</a></li>
-          <li><a href="/coming_soon/index.cfm?xdate=0&amp;order=p">Publishing Soon</a></li>
-          <li><a href="/browse/index.cfm/category_number/61/recommended-paperbacks/">Recent Paperback</a></li>
-          <li><a href="/browse/index.cfm/category_number/60/recommended-hardcovers/">Recent Hardcovers</a></li>                 
-				</ul>
+				<a href="">Authors</a>
 			</li>
 			
-			<li class="submenu">
-				<a href="/category/">Genres</a>
-				<ul>
-            <li><a href="/category/">Genres &amp; Themes</a></li>
-            <li><a href="/category/index.cfm/tc/favorites">Best of Year</a></li>
-					  <li><a href="/category/index.cfm/tc/awards">Award Winners</a></li>
-					  <li><a href="/jumper" rel="nofollow">Surprise Me!</a></li>
-				</ul>
-			</li>
-		
-      <li class="submenu">
-				<a href="/read-alikes/">Read-Alikes</a>
-			</li>
-         
-			<li>
-				<a href="/onlinebookclub/">Discuss</a>
-			</li>
-			
-			<li class="submenu">
-				<a href="/articles/">Articles</a>
-				<ul>
-					<li><a href="/articles/category/index.cfm/c/3/category/people-eras-events">People, Eras and Events</a></li>
-					<li><a href="/articles/category/index.cfm/c/2/category/society-and-politics">Society and Politics</a></li>
-					<li><a href="/articles/category/index.cfm/c/4/category/places-cultures-identities">Places, Cultures and Identities</a></li>
-					<li><a href="/articles/category/index.cfm/c/12/category/nature-and-the-environment">Nature and the Environment</a></li>
-					<li><a href="/articles/category/index.cfm/c/1/category/medicine-science-and-tech">Medicine, Science and Technology</a></li>
-					<li><a href="/articles/category/index.cfm/c/7/category/books-and-authors">Books and Authors</a></li>
-					<li><a href="/articles/category/index.cfm/c/6/category/cultural-curiosities">Cultural Curiosities</a></li>
-					<li><a href="/articles/category/index.cfm/c/8/category/reading-lists">Reading Lists</a></li>
-					<li><a href="/articles/category/index.cfm/c/13/category/music-and-the-arts">Music and the Arts</a></li>
-				</ul>
-			</li>
-
-      <li class="submenu">
-				<a href="/authors/">Authors</a>
-				<ul>
-					<li><a href="/author_interviews/">Interviews</a></li>
-          <li><a href="/authors/author_pronunciations/">Pronunciation Guides</a></li>
-				</ul>
-			</li>
-			
-			<li>
-				<a href="/ya">Young Adults</a>
-			</li>
-            
-			<li>
-				<a href="/blogs/editor/">Blog</a>
-			</li>
-            
-			<li class="submenu">
-				<a href="/fun/">Fun</a>
-				<ul>
-					<li><a href="/quiz">Personality Quiz</a></li>
-					<li><a href="/quotes">Literary Quotes</a></li>
-					<li><a href="/wordplay/">Wordplay</a></li>
-				</ul>
-			</li>
-            
-			<li class="submenu">
-				<a href="/about">About</a>
-			</li>
 		</ul>
 	</div>
 </nav>
@@ -142,8 +64,7 @@
 				<span>Search:</span>
 				<input type="checkbox" id="title" name="s_title" class="g" checked="checked" value="1"><label for="title">Title</label>
 				<input type="checkbox" id="author" name="s_author" class="g" checked="checked" value="1"><label for="author">Author</label>
-				<input type="checkbox" id="article" name="s_article" class="g" value="1"><label for="article">Article</label>
-				<label for="sstring" class="visually_hidden">Search String:</label><input type="text" id="sstring" name="search_string" value="Enter title, author or article">
+				<label for="string" class="visually_hidden">Search String:</label><input type="text" id="sstring" name="search_string" value="Enter title or author">
 				<input type="submit" value="Go!">
 				</p>
 			</form>	
@@ -171,41 +92,25 @@
 	
 <h2>Please enter a search term!</h2>
 	<div class="spacer"></div>
-    <p>BookBrowse is a selective website featuring some of the best books published in the past 15 years. If you don't find the book or author you're looking for in the first page of results the chances are it's because it is not one that we have featured.
-      <a href="/information/index.cfm/fuseaction/about/">More about BookBrowse</a>.
+    <p>This is a selective website featuring searched terms</p> 
+      <a href=""></a>
 	  </p>
 	</div>
 </div>
 
 <p class="textcenter">
-  <span class="error">Please select a title and/or author, or article in the search options.</span>
+  <span class="error">Please select a title and/or author in the search options.</span>
 		<br><br>
 	    <span class="exhead">Top search terms this week:</span><br>
 	    <span class="smallertext"><i>The bigger the search term, the more popular</i></span>
 </p>
 	
-<link rel="stylesheet" type="text/css" media="screen" title="pageturner" href="/site/style/tagcloud.css">
-
-<!-- right_column -->
-<div class="right_column">
-
-<br>
-
-<div class="display_right"></div>
-
-<div class="display_right">
-  <div style="position:relative; width:1px; min-width:100%;padding-bottom:56.25%;"><iframe allow="autoplay" class="spotlightr" allowtransparency="true" style="width:1px; min-width:100%; height: 100%; position:absolute" allowfullscreen="true" src="https://bookbrowse.cdn.spotlightr.com/watch/MTI3NTYzNw==?fallback=true" frameborder="0" scrolling="no" name="videoPlayerframe"> </iframe></div>
-  </div>
-  <!-- /quote_block3 -->
-</div>
-
 <!-- footer menu -->
 <div id="footer">
 <nav class="main_menu" aria-label="Footer submenu">
 	<div class="wrapper">
 		<ul>
-			<li><a href="">Book Submissions</a></li>
-			<li><a href="">Reviewing for BookBrowse</a></li>
+			<li><a href="">Write a Review</a></li>
     </ul>
 	</div>
 </nav>
@@ -219,81 +124,26 @@
 </style>
 
 <!-- footer -->
-<footer class="footer">
-	<div class="wrapper new">
-		<div class="spacer_20"></div>
-		<ul class="newfooter">
-      <li><a href="/current_books/">New</a></li>
-			<li><a href="/category/index.cfm/tc/tags">Explore</a></li>
-      <li><a href="/articles/">Articles</a></li>
-      <li><a href="/authors/">Authors</a></li>
-			<li><a href="/ya">Young Adults</a></li>
-			<li><a href="/fun/">Fun</a></li>
-		</ul>
-	<div class="spacer"></div>
-</footer>
-<!-- /footer -->
-</div>
+    <footer class="footer">
+	    <div class="wrapper new">
+		    <div class="spacer_20"></div>
+		    <ul class="newfooter">
+                <li><a href="/current_books/">New</a></li>
+	            <li><a href="/category/index.cfm/tc/tags">Explore</a></li>
+            <li><a href="/authors/">Authors</a></li>
+			    <li><a href="/ya">Young Adults</a></li>
+			    <li><a href="/fun/">Fun</a></li>
+		    </ul>
+	    <div class="spacer"></div>
+    </footer>
+    <!-- /footer -->
+    </div>
 
-<div id="promopop-container" style="display: none;">
-	<a class="close">X</a>
-	  <div id="promopop-window">
-	    <div class="promopop-content">
-	      
-	        <h5>Free Weekly Newsletters</h5>
-			<h6>Keep up with what's happening in the world of books:<br>Reviews, previews, interviews and more!</h6>
-	        
-			<p>
-				</p><form style="font-size: 14px;" action="/mailman/index.cfm" method="post" onsubmit="submit.disabled = true; submit.value = 'Processing...'; return true;">
-					<input type="text" size="17" value="Enter your first name" onfocus="this.value=(this.value=='Enter your first name') ? '' : this.value;" onblur="this.value=(this.value=='') ? 'Enter your first name' : this.value;" style="width: 200px;" name="fname" alt="First Name"><br>
-					<input type="text" size="17" value="Enter your email" onfocus="this.value=(this.value=='Enter your email') ? '' : this.value;" onblur="this.value=(this.value=='') ? 'Enter your email' : this.value;" style="width: 200px;" name="ea" alt="email address"><br>
-					<input type="submit" name="submit" value="Subscribe Me!" class="button red">
-					<input type="hidden" name="ic" value="1814554569,1705649783">
-					
-					<p><em><b>Spam Free</b></em>: Your email is never shared with anyone; opt out any time.</p>
-				</form>
-			<p></p>
-	  </div>
-	</div>
-	</div>
-  <script src="/site/js/promopop.js"></script>
-
-  <script>
-  window.fbAsyncInit = function() {
-    // init the FB JS SDK
-    //FB.init({appId: '176762499038251', status: true, cookie: true,
-    //         xfbml: true});
-	FB.init({appId: 81388598211, status: true, cookie: true, xfbml: true});
-  };
-
-  // Load the SDK's source Asynchronously
-  (function(d){
-     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement('script'); js.id = id; js.async = true;
-     js.src = "//connect.facebook.net/en_US/all.js";
-     ref.parentNode.insertBefore(js, ref);
-   }(document));
-</script>
-<script async="" defer="" crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v6.0"></script>
-
-<script>
-function OpenTellAFriend(a) {
-    var maxheight = 400;
-    maxheight = screen.height;
-    if (maxheight > 660) {
-      maxheight = 660;
-    } else {
-      maxheight = maxheight - 100;
-    }
-    OpenWindow('/tell_a_friend/index.cfm?url='+a,'tellafriend','600',maxheight);
-  }
-</script>
-<div id="fb-root" class=" fb_reset">
-  <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
-    <div></div>
-  </div>
-</div>
+    <div id="fb-root" class=" fb_reset">
+        <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+            <div></div>
+        </div>
+    </div>
  </body>
  </html>
 		   
