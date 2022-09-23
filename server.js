@@ -4,9 +4,10 @@ const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 const sequelize = require('./config/connection');
+const session = require('express-session');
+const SequelizeStore = require('connect-session-sequelize');
+(session.Store);
 
-// TODO: need to use cookies and session
-// TODO: need to have auth for login
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -26,7 +27,7 @@ const sess = {
       db: sequelize
     })
   };
-  
+    
   app.use(session(sess));
 
 app.engine('handlebars', hbs.engine);
