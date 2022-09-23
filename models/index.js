@@ -2,6 +2,11 @@
 const Books_Read = require('./Book-Read')
 const Read = require('./Want-to-Read')
 const User = require('./User');
+
+const Review = require('./Reviews');
+
+module.exports = { User, Read, Books_Read, Review };
+
 const Reviews = require('./Reviews')
 
 Driver.hasOne(License, {
@@ -10,3 +15,4 @@ Driver.hasOne(License, {
   });
 
 module.exports = { User, Read, Books_Read, Reviews };
+
