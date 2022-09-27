@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User, Review } = require('../models/index');
+// const Reviews = require('../models/Reviews');
 
 router.get('/', async (req, res) => {
   try {
@@ -32,8 +33,8 @@ router.get('/reviews/:user_id', async (req, res)=>{
     },
     )
     const users = userReviews.get({ plain: true });
-    console.log(users);
-    res.render('manageReview', users.Reviews[0] );
+    console.log(users.Reviews);
+    res.render('manageReview', users.Reviews );
   }catch (err){res.status(404).json(err.message)}
 })
 

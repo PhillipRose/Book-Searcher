@@ -1,0 +1,31 @@
+[{
+    "book_title": "The hobbit",
+    "book_author": "J.R.R. Tolkien",
+    "review_content": "This book was the first book I read cover to cover.",
+    "user_id": 2,
+    "User": 2
+
+},
+{
+    "book_title": "The Lord of the Rings: Fellowship of the Ring",
+    "book_author": "J.R.R. Tolkien",
+    "review_content": "This book was the second book I read cover to cover.",
+    "user_id": 1,
+    "User": 1
+},
+{
+    "review_id": 4,
+    "book_title": "Narnia",
+    "book_author": "C.S Lewis",
+    "review_content": "The first decent movie version of a book.",
+    "user_id": 1,
+    "User": 1
+ },
+{
+    "book_title": "twilight",
+    "book_author": "unknown",
+    "review_content": "Will never read this book or sequels",
+    "user_id":3,
+    "User":4
+}
+]
