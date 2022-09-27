@@ -1,0 +1,24 @@
+<script src="{{jsFunc}}"></script>
+    {{> header}}
+
+<h1>FAVORITE BOOKS</h1>
+<div class="search-fav-books-container" id="search-fav-books-container">
+    <input type="text" placeholder="Filter books..." name="search" class="search-input" id="search-fav-book"
+           onkeyup="getFilteredBooks(this.value)">
+</div>
+
+<section class="fav-books">
+    {{#each favBooks}}
+        <article class="my-fav-book" id="my-fav-book-{{workId}}">
+            <p class="book-title-author"> {{title}} <span> by </span> {{author}} </p>
+            <p class="extra-book-info"><strong>WorkId: </strong>  {{workId}} <span></span> <strong>Release Date: </strong> {{onSaleDate}}</p>
+            <p class="user-comment-section"><strong>Comment: </strong>{{comment}}</p>
+            <button class="edit-fav-book" onclick="goToEdit({{workId}})">Edit</button>
+            <span class="btn-separator"></span>
+            <button class="delete-fav-book"onclick="deleteBook({{workId}})">Delete</button>
+        </article>
+
+    {{/each}}
+</section>
+
+{{> footer}}
