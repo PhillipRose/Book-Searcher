@@ -7,19 +7,15 @@
         <legend>Book Info</legend>
         <div class="book-edit-single-info">
             <label for="book-title">Book:</label>
-            <textarea  id="book-title" name="book-title" cols="" rows="4">{{titleBook}}</textarea>
+            <textarea  id="book-title" name="book-title" cols="" rows="4" spellcheck="true">{{book_title}}</textarea>
         </div>
         <div class="book-edit-single-info">
             <label for="book-author">Author:</label>
-            <input type="text" id="book-author" name="book-author" value="{{author}}">
+            <input type="text" id="book-author" name="book-author" value="{{book_author}}">
         </div>
         <div class="book-edit-single-info">
-            <label for="book-on-sale-date">ReleaseDate:</label>
-            <input type="text" id="book-on-sale-date" name="book-on-sale-date" value="{{onSaleDate}}">
-        </div>
-        <div class="book-edit-single-info">
-            <label for="book-user-comment">Comment:</label>
-            <textarea  id="book-user-comment" name="book-user-comment" rows="4" cols=""> {{comment}}</textarea>
+            <label for="book-user-comment">Review:</label>
+            <textarea  id="book-user-comment" name="book-user-comment" rows="4" cols="" spellcheck="true"> {{review_content}}</textarea>
         </div>
 
         <button type="button" class="save-edit-btn" onclick="updateData({{workId}})">Save</button>
