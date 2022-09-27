@@ -1,15 +1,14 @@
 {{!-- This page will have space for one book title and book author at the top, under the nav bar. --}}
 {{!-- The rest of the page will be a blank text box with a placeholder of "Write your review here." for the user to write their review along with a submit button. --}}
-{{#each review as |review| }}
+{{#each Reviews as |review| }}
+
 <div class="review card">
   <div class="review-card title">
-    {{users.email}}
-
-    {{book_title}}
+    {{review.book_title}}
   </div>
    <p>
       Author:
-      {{book_author}}
+      {{review.book_author}}
     </p>
   <div class="card-body">
     <p>
