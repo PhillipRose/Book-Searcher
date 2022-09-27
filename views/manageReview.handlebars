@@ -3,16 +3,20 @@
 {{#each review as |review| }}
 <div class="review card">
   <div class="review-card title">
+<<<<<<< HEAD
+=======
+    {{users.email}}
+>>>>>>> c49fed90040c127fcbabc2d33e60099767668f93
     {{book_title}}
   </div>
    <p>
       Author:
-      {{author_name}}
+      {{book_author}}
     </p>
   <div class="card-body">
     <p>
       Review:
-      {{review}}
+      {{review_content}}
     </p>
     <button type='submit' value='Remove'>
         Remove
