@@ -18,11 +18,22 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/reviews/:user', async (req, res)=>{
+router.get('/reviews/:user_id', async (req, res)=>{
+  
   try{
-    const userReviews = await Review.findAll({order: [['book_title', 'ASC']]})
-    const reviewList = userReviews.map((reviewContent) => reviewContent.get({ plain: true }));
-    res.render('manageReview', {reviewList})
+    const userReviews = await User.findByPk(req.params.user_id, {
+      include: [
+        {
+          model: Review,
+          attributes: ['book_title', 'book_author', 'review_content'],
+
+        },
+      ],
+    },
+    )
+    const users = userReviews.get({ plain: true });
+    console.log(users);
+    res.render('manageReview', users.Reviews[0] );
   }catch (err){res.status(404).json(err.message)}
 })
 
