@@ -20,13 +20,13 @@ router.post('/', (req, res) => {
     .then(data => res.json(data))
     .catch(err => res.status(500).json(err.message))
 })
-router.put('/:id', (req, res) => {
-    Review.update({where:{id:req.params.id}}, req.body)
+router.put('/:review_id', (req, res) => {
+    Review.update(req.body,{where: {review_id:req.params.review_id}} )
     .then(data => res.json(data))
     .catch(err => res.status(500).json(err.message))
 })
 router.delete('/:id', (req, res) => {
-    Review.destroy({where:{id: req.params.id}})
+    Review.destroy({where:{id: req.params.review_id}})
     .then(data => res.json(data))
     .catch(err => res.status(500).json(err.message))
 })
