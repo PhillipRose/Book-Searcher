@@ -1,46 +1,31 @@
-# Book-Searcher
-
-## Techs Used
-
-
+# Phil the Book Shelf
 
 ## Table of Contents
 
 1. [Description](#description)
-2. [Technologies](#technologies)
-3. [Visuals](#visuals)
-4. [Resources](#resources)
-5. [Installation](#installation)
-6. [Usage](#usage)
-7. [Authors and Acknowledgements](#authors-and-acknowledgements)
+2. [Visuals](#visuals)
+3. [Resources](#resources)
+4. [Installation](#installation)
+5. [Authors and Acknowledgements](#authors-and-acknowledgements)
 
 ## Description
 
 
-
-
-## Technologies
-
-
-
 ## Visuals
 
-- [Employee Tracker Video Link]()
-
-- [Employee Tacker Screehshots]()
+- [Book Searcher Tacker Screehshot]()
 
 ## Resources
 
-- [LIVE SITE]())
+- [LIVE SITE]()
 
-- [Repository](https://github.com/Cinderbeast/12-SQL-Employee-Tracker)
+- [Repository]()
 
-## Installation
-- Download through GitHub Repository
-- Open Project Directory, then install the required dependencies
-
-## Usage
-git a
-## Authors and Acknowledgements
-
-Code created by University of Utah Bootcamp Coding Students
+## Credits / Reference Material
+|                                                                                               | Authors                                                  |
+| -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| 1     | [Cindy Chynoweth](https://github.com/Cinderbeast)                  |
+| 2     | [Phillip Rose](https://github.com/Logan2391)              |
+| 3     | [Courage Cottrell](https://github.com/ccottrell52)                  |
+| 4     | [Colton Vincent](https://github.com/ColtonVincent)    |
+1.  
