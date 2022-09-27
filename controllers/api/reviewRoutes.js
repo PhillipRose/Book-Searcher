@@ -25,8 +25,8 @@ router.put('/:review_id', (req, res) => {
     .then(data => res.json(data))
     .catch(err => res.status(500).json(err.message))
 })
-router.delete('/:id', (req, res) => {
-    Review.destroy({where:{id: req.params.review_id}})
+router.delete('/:review_id', (req, res) => {
+    Review.destroy({where:{review_id: req.params.review_id}})
     .then(data => res.json(data))
     .catch(err => res.status(500).json(err.message))
 })
