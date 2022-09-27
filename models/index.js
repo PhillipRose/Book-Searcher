@@ -6,6 +6,9 @@ Review.belongsTo(User, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE',
   });
+  User.hasMany(Review, {
+    foreignKey: 'user_id'
+  })
 
 
 
