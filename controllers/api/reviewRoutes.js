@@ -1,9 +1,9 @@
 const router = require('express').Router();
 const { Review, User }  = require('../../models');
-// finds all reviews for a user.
+// finds all reviews
 router.get('/', (req, res) => {
     Review.findAll({
-        include: [User]
+        exclude: [User]
     })
     .then(data => res.json(data))
     .catch(err => res.status(500).json(err.message))
@@ -12,8 +12,7 @@ router.get('/', (req, res) => {
 // finds a specific review
 router.get('/:id', (req, res) => {
     Review.findByPk(req.params.id, {
-        exclude: ['password'], 
-        include: [User]
+        exclude: [User]
     })
     .then(data => res.json(data))
     .catch(err => res.status(500).json(err.message))
