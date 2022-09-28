@@ -5,16 +5,16 @@
 <div class="review card">
   <div class="review-card title">
 
-    {{users.email}}
+    Title: {{this.book_title}}
   </div>
    <p>
       Author:
-      {{review.book_author}}
+      {{this.book_author}}
     </p>
   <div class="card-body">
     <p>
       Review:
-      {{review_content}}
+      {{this.review_content}}
     </p>
     <button type='submit' value='Remove'>
         Remove
@@ -22,3 +22,5 @@
   </div>
 </div>
 {{/each}}
+
+
