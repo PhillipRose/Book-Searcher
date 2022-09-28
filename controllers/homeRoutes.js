@@ -37,7 +37,7 @@ router.get('/reviews/:user_id', async (req, res)=>{
     )
     const users = userReviews.get({ plain: true });
     console.log(users);
-    res.render('test', {Reviews: users.Reviews});
+    res.render('manageReview', {Reviews: users.Reviews, id: req.session.user_id, logged_in: req.session.logged_in });
   }catch (err){res.status(404).json(err.message)}
 })
 
