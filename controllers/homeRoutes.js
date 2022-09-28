@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { User, Review } = require('../models/index');
-// const Reviews = require('../models/Reviews');
+
 
 router.get('/', async (req, res) => {
   try {
@@ -25,6 +25,7 @@ router.get('/reviews/:user_id', async (req, res)=>{
   
   try{
     const userReviews = await User.findByPk(req.params.user_id, {
+
       include: [
         {
           model: Review,
