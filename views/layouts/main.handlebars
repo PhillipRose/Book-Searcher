@@ -5,23 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User Registry</title>
-  <link rel="stylesheet" href="../../public/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="display-flex justify-space-between align-center p-2">
-    <h1>User Registry</h1>
+    <h1>Main header</h1>
   </header>
   <main class="container container-fluid mt-5">
-    {{!-- A nav bar should go here and have the options of Home, My Reviews, My Read Books, Login/Log out --}}
     <nav class="nav justify-content-center">
       <a class="nav-home" href="#">Home</a>
       <a class="nav-my reviews" href="#">My Reviews</a>
       {{#unless logged_in}}
-      <a class="nav-read books" href="#">Login</a>
+      <a class="nav-read books" id="logout" href="/login">Login</a>
       {{/unless}}
       {{#if logged_in}}
-      <a class="nav-read books" href="/logout">Logout</a>
+      <a class="nav-read books"  href="/logout">Logout</a>
       {{/if}}
     </nav>
     {{{ body }}}
@@ -29,6 +28,7 @@
   <footer>
 
   </footer>
+  <script></script>
 </body>
 
 </html>
