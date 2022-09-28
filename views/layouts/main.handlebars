@@ -17,7 +17,12 @@
     <nav class="nav justify-content-center">
       <a class="nav-home" href="#">Home</a>
       <a class="nav-my reviews" href="#">My Reviews</a>
-      <a class="nav-read books" href="#">Login/Log-Out</a>
+      {{#unless logged_in}}
+      <a class="nav-read books" href="#">Login</a>
+      {{/unless}}
+      {{#if logged_in}}
+      <a class="nav-read books" href="/logout">Logout</a>
+      {{/if}}
     </nav>
     {{{ body }}}
   </main>
