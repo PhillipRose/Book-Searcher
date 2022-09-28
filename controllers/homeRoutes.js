@@ -13,7 +13,7 @@ router.get('/', async (req, res) => {
     const users = userData.map((project) => project.get({ plain: true }));
 
     // Pass serialized data into Handlebars.js template
-    res.render('manageReview', { users });
+    res.render('test', { users });
   } catch (err) {
     res.status(500).json(err.message);
   }
@@ -33,9 +33,11 @@ router.get('/reviews/:user_id', async (req, res)=>{
     },
     )
     const users = userReviews.get({ plain: true });
-    console.log(users.Reviews);
-    res.render('manageReview', users.Reviews );
+    console.log(users);
+    res.render('test', {Reviews: users.Reviews});
   }catch (err){res.status(404).json(err.message)}
 })
+
+
 
 module.exports = router;
