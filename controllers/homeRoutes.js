@@ -13,11 +13,13 @@ router.get('/', async (req, res) => {
     const users = userData.map((project) => project.get({ plain: true }));
 
     // Pass serialized data into Handlebars.js template
-    res.render('test', { users });
+    res.render('homepage', { users, logged_in: req.session.logged_in });
   } catch (err) {
     res.status(500).json(err.message);
   }
 });
+
+
 
 router.get('/reviews/:user_id', async (req, res)=>{
   
@@ -38,6 +40,18 @@ router.get('/reviews/:user_id', async (req, res)=>{
   }catch (err){res.status(404).json(err.message)}
 })
 
+router.get('/login', async (req, res)=>{
+  res.render('login');
+})
 
+router.get('/logout', (req, res) => {
+  if (req.session.logged_in) {
+    req.session.destroy(() => {
+      res.render('homepage');
+    });
+  } else {
+    res.status(404).end();
+  }
+});
 
 module.exports = router;
