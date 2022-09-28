@@ -1,25 +1,37 @@
-# Phil the Book Shelf
+# Phil the Book Shelf 
 
-## Table of Contents
+##Book Searcher
 
-1. [Description](#description)
-2. [Visuals](#visuals)
-3. [Resources](#resources)
-4. [Installation](#installation)
-5. [Authors and Acknowledgements](#authors-and-acknowledgements)
+A web service, which helps you to search for books using sorting and different filters.  If you want to see reviews or right, edit or delete on your self.  Users will need to create a login to access this site.  
 
-## Description
+## What is this Book Searcher?
+
+
+
+
 
 
 ## Visuals
 
 - [Book Searcher Tacker Screehshot]()
 
+### <ins> Technologies </ins>:
+
+- Handlebars
+- Heroku
+- Node.js back end
+- Express.js back end
+- Animate.CSS
+
+
+
 ## Resources
 
 - [LIVE SITE]()
 
 - [Repository]()
+
+
 
 ## Credits / Reference Material
 |                                                                                               | Authors                                                  |
