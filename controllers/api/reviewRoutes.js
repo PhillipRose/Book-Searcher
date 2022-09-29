@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 })
 
 // finds a specific review
-router.get('/:id', (req, res) => {
+router.get('/reviews/:id', (req, res) => {
     Review.findByPk(req.params.id, {
         exclude: [User]
     })
@@ -38,4 +38,4 @@ router.delete('/:review_id', (req, res) => {
     .then(data => res.json(data))
     .catch(err => res.status(500).json(err.message))
 })
-module.exports = router;
+// module.exports = router;

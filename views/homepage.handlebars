@@ -6,9 +6,8 @@
   />
 </head>
 
-{{Reviews}}
-<p>Above is the data being sent through</p>
 
+{{#if logged_in}}
 <div class="row mt-4">
   <div class="col-md-6">
     <h3 class="animate__animated animate__bounce">Create a New Review:</h3>
@@ -31,3 +30,8 @@
       </div>
     </form>
   </div>
+  {{/if}}
+  {{#unless logged_in}}
+  <p> Please <h1 class="animate__animated animate__bounce">Login</h1> or <h1 class="animate__animated animate__swing">Register</h1> to proceed.
+  </p>
+  {{/unless}}
