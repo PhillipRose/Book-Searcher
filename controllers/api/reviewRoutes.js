@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
 })
 
 // finds a specific review
-router.get('/:id', (req, res) => {
+router.get('/reviews/:id', (req, res) => {
     Review.findByPk(req.params.id, {
         exclude: [User]
     })

@@ -3,11 +3,11 @@ const { User, Review } = require('../models/index');
 const withAuth = require('../utils/auth');
 
 
-router.get('/', async (req, res) => {
+router.get('/:id', withAuth, async (req, res) => {
   try {
-    // Get all users, sorted by name
-    const userData = await User.findAll({
-      attributes: { exclude: ['password'] },
+    // Get all reviews by the logged in user.
+    const userData = await Review.findAll({
+      where: { id: req.params.user_id },
     });
 
     // Serialize user data so templates can read it
@@ -22,8 +22,8 @@ router.get('/', async (req, res) => {
 
 
 
-router.get('/reviews/', async (req, res)=>{
-  console.log(req.params.user_id + ' is the user_id')
+router.get('/myreviews/:user_id', withAuth, async (req, res)=>{
+  console.log(req.session.user_id + ' is the user_id')
   
   try{
     const userReviews = await Review.findAll({ where: {
@@ -34,29 +34,29 @@ router.get('/reviews/', async (req, res)=>{
 
   console.log(userReviews);
     const users = userReviews.get({ plain: true });
-    res.render('manageReview', {Reviews: users.Reviews, id: req.session.user_id, logged_in: req.session.logged_in });
+    res.render('manageReview', {Reviews: users.Reviews, logged_in: req.session.logged_in });
   }catch (err){res.status(404).json(err.message)}
 })
 
-router.get('/myreviews/:user_id', withAuth, async (req, res) => {
-  try {
+// router.get('/myreviews/:user_id', withAuth, async (req, res) => {
+//   try {
   
-    const userData = await User.findByPk(req.params.user_id, {
-      attributes: { exclude: ['password'] },
-      include: [{ model: Review} ],
-    });
+//     const userData = await User.findByPk(req.params.user_id, {
+//       attributes: { exclude: ['password'] },
+//       include: [{ model: Review} ],
+//     });
 
-    const user = userData.get({ plain: true });
-    console.log(req.params +' is the params');
+//     const user = userData.get({ plain: true });
+//     console.log(req.params +' is the params');
 
-    res.render('test', {
-      Review: user.Reviews,
-      logged_in: true,
-    });
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
+//     res.render('test', {
+//       Review: user.Reviews,
+//       logged_in: true,
+//     });
+//   } catch (err) {
+//     res.status(500).json(err);
+//   }
+// });
 
 
 router.get('/login', async (req, res)=>{
