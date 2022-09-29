@@ -30,6 +30,7 @@ router.post('/login', async (req, res) => {
     }
 
     const validPassword = await userData.checkPassword(req.body.password);
+    
 
     if (!validPassword) {
       res
@@ -42,8 +43,9 @@ router.post('/login', async (req, res) => {
     req.session.save(() => {
       req.session.user_id = userData.id;
       req.session.logged_in = true;
+      console.log(userData.id + ' is the user id');
       
-      res.json({ user: userData, message: 'You are now logged in!' });
+      res.json({ user: userData, message: `You are now logged in!` });
       
     });
       }
@@ -53,4 +55,4 @@ router.post('/login', async (req, res) => {
   }
 });
 
-module.exports = router;
+// module.exports = router;
