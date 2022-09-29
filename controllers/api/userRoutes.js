@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { User } = require('../../models');
 
 router.post('/', async (req, res) => {
-  console.log('route hitting')
+  console.log('signup route hitting')
   try {
     const userData = await User.create(req.body);
 
@@ -19,6 +19,7 @@ router.post('/', async (req, res) => {
 });
 
 router.post('/login', async (req, res) => {
+  console.log('login post route is hitting')
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
 
