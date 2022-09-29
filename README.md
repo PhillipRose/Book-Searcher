@@ -2,13 +2,10 @@
 
 ##Book Searcher
 
-A web service, which helps you to search for books using sorting and different filters.  If you want to see reviews or right, edit or delete on your self.  Users will need to create a login to access this site.  
-
 ## What is this Book Searcher?
 
 
-
-
+A web service, which helps you to search for books using sorting and different filters.  If you want to see reviews or right, edit or delete on your self.  Users will need to create a login to access this site.  
 
 
 ## Visuals
