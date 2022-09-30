@@ -4,4 +4,4 @@ const reviewRoutes = require('./reviewRoutes')
 router.use('/user', userRoutes)
 router.use('/reviews', reviewRoutes)
 
-module.exports = router
+module.exports = router;

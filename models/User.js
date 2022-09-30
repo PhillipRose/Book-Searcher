@@ -1,9 +1,3 @@
-// User will have reviews, completed books and Want to Read books.
-// User will need id primary key, a list of read books, a list of To Read Books, a list of reviews created by them.
-//  TODO: set up the table logic
-//  TODO: set up the references to the completed books list
-//  TODO: set up the references to the want to read books list
-//  TODO: set up the references to the reviews list
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
@@ -27,7 +21,7 @@ User.init(
     // This is the displayed name for the User.
     user_name: {
       type: DataTypes.STRING(40),
-      allowNull: true,
+      allowNull: false,
     },
     email: {
       type: DataTypes.STRING,
@@ -39,7 +33,7 @@ User.init(
     },
     password: {
       type: DataTypes.STRING,
-      allowNull: true,
+      allowNull: false,
     },
   },
   {

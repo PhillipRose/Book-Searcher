@@ -14,13 +14,15 @@
   </header>
   <main class="container container-fluid mt-5">
     <nav class="nav justify-content-center">
+
       <a class="nav-home" href="#">Home</a>
       <a class="nav-my reviews" href="#">My Reviews</a>
+
       {{#unless logged_in}}
-      <a class="nav-read books" id="logout" href="/login">Login</a>
+      <a class="nav-read books" id="logout" href="#">Login</a>
       {{/unless}}
       {{#if logged_in}}
-      <a class="nav-read books"  href="/logout">Logout</a>
+      <a class="nav-read books"  href="#">Logout</a>
       {{/if}}
     </nav>
     {{{ body }}}
