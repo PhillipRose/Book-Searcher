@@ -1,11 +1,10 @@
 # Phil the Book Shelf 
 
-##Book Searcher
-
-A web service, which helps you to search for books using sorting and different filters.  If you want to see reviews or right, edit or delete on your self.  Users will need to create a login to access this site.  
+## Book Searcher
 
 ## What is this Book Searcher?
 
+A web service, which helps you to search for books using sorting and different filters.  If you want to see reviews or right, edit or delete on your self.  Users will need to create a login to access this site.  
 
 
 
@@ -40,4 +39,3 @@ A web service, which helps you to search for books using sorting and different f
 | 2     | [Phillip Rose](https://github.com/Logan2391)              |
 | 3     | [Courage Cottrell](https://github.com/ccottrell52)                  |
 | 4     | [Colton Vincent](https://github.com/ColtonVincent)    |
-1.  
