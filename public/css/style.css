@@ -11,3 +11,10 @@ nav{
     width: 100vw;
     font-size: large;
 }
+footer{
+    background-color: cadetblue;
+    padding: 25px;
+    text-align: center;
+    font-size: large;
+    width: 100vw;
+}
