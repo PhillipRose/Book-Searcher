@@ -12,7 +12,6 @@ router.get('/', (req, res) => {
 // finds a specific review
 router.get('/:id', (req, res) => {
     Review.findByPk(req.params.id, {
-        exclude: ['password'], 
         include: [User]
     })
     .then(data => res.json(data))

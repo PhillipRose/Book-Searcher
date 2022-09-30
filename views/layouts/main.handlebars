@@ -10,12 +10,12 @@
 
 <body>
   <header class="display-flex justify-space-between align-center p-2">
-    <h1></h1>
+    <h1>Main header</h1>
   </header>
   <main class="container container-fluid mt-5">
     <nav class="nav justify-content-center">
-      <a class="nav-home" href="/">Home</a>
-      <a class="nav-my reviews" href="/api/reviews">My Reviews</a>
+      <a class="nav-home" href="#">Home</a>
+      <a class="nav-my reviews" href="#">My Reviews</a>
       {{#unless logged_in}}
       <a class="nav-read books" id="logout" href="/login">Login</a>
       {{/unless}}
