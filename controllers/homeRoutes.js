@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { User, Review } = require('../models/index');
+
 const withAuth = require('../utils/auth');
+
 
 
 router.get('/:id', withAuth, async (req, res) => {
@@ -26,13 +28,18 @@ router.get('/myreviews/:user_id', withAuth, async (req, res)=>{
   console.log(req.session.user_id + ' is the user_id')
   
   try{
-    const userReviews = await Review.findAll({ where: {
-      user_id: req.session.user_id,
-    }, 
-    
-  })
 
-  console.log(userReviews);
+    const userReviews = await User.findByPk(req.params.user_id, {
+      include: [
+        {
+          model: Review,
+          attributes: ['book_title', 'book_author', 'review_content'],
+
+        },
+      ],
+    },
+    )
+
     const users = userReviews.get({ plain: true });
     res.render('manageReview', {Reviews: users.Reviews, logged_in: req.session.logged_in });
   }catch (err){res.status(404).json(err.message)}
