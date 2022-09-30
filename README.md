@@ -10,7 +10,7 @@ A web service, which helps you to search for books using sorting and different f
 
 ## Visuals
 
-- [Book Searcher Tacker Screehshot]()
+- ![Book Searcher Tacker Screehshot](./images/project02.png)
 
 ### <ins> Technologies </ins>:
 
@@ -24,7 +24,7 @@ A web service, which helps you to search for books using sorting and different f
 
 ## Resources
 
-- [LIVE SITE]()
+- [LIVE SITE](https://serene-gorge-80363.herokuapp.com/)
 
 - [Repository](https://github.com/PhillipRose/Book-Searcher)
 
